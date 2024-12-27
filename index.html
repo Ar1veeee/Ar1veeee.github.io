@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="dist/img/logo.png">
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-in-out;
+        }
+        
+    </style>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <article class="text-primary w-full my-4 animate-fade-in">
+        <div class="flex justify-center">
+            <div class="xl:container mx-10 flex flex-col mt-10">
+                <!-- Logo Atas -->
+                <div class="flex justify-center mb-4">
+                    <img src="dist/img/logo.png" alt="" width="130px" class="rounded-full">
+                </div>
+                <h1 class="font-bold text-2xl font-rubik text-center">Alief Arifin Mahardiko</h1>
+                <h1 id="animated-text" class="text-md text-slate-600 font-rubik my-3 text-center min-h-[1.5rem]">Fullstack Developer</h1>
+                <!-- main menu -->
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full">
+                        <a href="https://aliefarfn.my.id" target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/web.png" alt="Portfolio"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>My Portfolio</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Visit My Site</span>
+                            <span
+                                class="absolute inset-0 w-full h-full bg-primary transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                        <a href="https://trakteer.id/aliefarfn/tip" target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/coffee.png" alt="Trakteer"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>Treat Me to a Coffee</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Support Me</span>
+                            <span
+                                class="absolute inset-0 w-full h-full bg-primary transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                    </div>
+                    <div class="w-full">
+                        <h1 class="text-center  text-xl font-rubik font-semibold mb-3 mt-5">Reach Out for Business
+                        </h1>
+                        <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=aliefarifin99@gmail.com"
+                            target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/gmail.png" alt="Email"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>Email</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Contact Me</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-gmail-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                        <a href="https://wa.me/6285947354250"
+                            target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-green-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-green-700 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/whatsapp.png" alt="Whatsapp"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>Whatsapp</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Contact Me</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-whatsapp-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                        <a href="https://t.me/username" target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-cyan-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-cyan-700 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/telegram.png" alt="Telegram"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>Telegram</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Contact Me</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-telegram-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                    </div>
+                    <div class="w-full">
+                        <h1 class="text-center w-full text-xl font-rubik font-semibold mb-3 mt-5">Socials</h1>
+                        <a href="https://www.instagram.com/aliefarfn" target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/instagram.png" alt="Instagram"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>Instagram</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Let's Connect</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-instagram-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alief-arifin-mahardiko-335502235"
+                            target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-blue-500 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-blue-500 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/linkedin.png" alt="LinkedIn"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>LinkedIn</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Let's Connect</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-linkedin-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                        <a href="https://github.com/Ar1veeee"
+                            target="_blank"
+                            class="w-full border-2 shadow-xl rounded-md border-slate-900 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-slate-900 flex mr-3 items-center relative overflow-hidden group">
+                            <div class="relative w-6 h-6 mr-3">
+                                <img src="dist/img/github.png" alt="GitHub"
+                                    class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 z-20 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14m-7-7l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <span>GitHub</span>
+                            <span class="absolute ml-10 z-10 transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-300">Let's Connect</span>
+
+                            <span
+                                class="absolute inset-0 w-full h-full bg-github-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
