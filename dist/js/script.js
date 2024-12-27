@@ -12,31 +12,25 @@ const typeEffect = () => {
 
   element.textContent = displayText;
 
-  // Kecepatan mengetik/hapus
   const typeSpeed = isDeleting ? 50 : 100;
-
-  // Beralih antara ketik dan hapus
   if (!isDeleting && charIndex === currentRole.length) {
-    setTimeout(() => (isDeleting = true), 1000); // Tunggu sebelum menghapus
+    setTimeout(() => (isDeleting = true), 1000);
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
-    roleIndex = (roleIndex + 1) % roles.length; // Ganti ke kata berikutnya
+    roleIndex = (roleIndex + 1) % roles.length;
   }
-
   setTimeout(typeEffect, typeSpeed);
 };
 
-// Mulai animasi
 typeEffect();
 
+const checkbox = document.querySelector("#toggle");
+const html = document.querySelector("html");
 
-const checkbox = document.querySelector('#toggle');
-const html = document.querySelector('html');
-
-checkbox.addEventListener('click', function () {
+checkbox.addEventListener("click", function () {
   if (checkbox.checked) {
-    html.classList.add('dark');        
+    html.classList.add("dark");
   } else {
-    html.classList.remove('dark');        
+    html.classList.remove("dark");
   }
 });
