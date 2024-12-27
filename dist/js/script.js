@@ -28,3 +28,15 @@ const typeEffect = () => {
 
 // Mulai animasi
 typeEffect();
+
+
+const checkbox = document.querySelector('#toggle');
+const html = document.querySelector('html');
+
+checkbox.addEventListener('click', function () {
+  if (checkbox.checked) {
+    html.classList.add('dark');        
+  } else {
+    html.classList.remove('dark');        
+  }
+});
