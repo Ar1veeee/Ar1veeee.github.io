@@ -58,12 +58,12 @@ body {
 .btn-sensor {
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 0);
   position: absolute;
-  inset-inline-start: calc(50% - 130px / 2);
-  inset-block-start: calc(50% - 130px / 2);
+  inset-inline-start: calc(50% - 830px / 2);
+  inset-block-start: calc(50% - 830px / 2);
   transform: rotate(calc(var(--a) * 1deg))
-    translateY(calc(130px * -50 / 100));
-  inline-size: 130px;
-  block-size: 130px;
+    translateY(calc(830px * -50 / 100));
+  inline-size: 830px;
+  block-size: 830px;
   z-index: 99;
 }
 .sensor-n:hover ~ .btn-button .btn-pupil {
