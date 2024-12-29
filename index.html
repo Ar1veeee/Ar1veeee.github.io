@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
     <link rel="shortcut icon" href="dist/img/logo.png">
+    <link rel="stylesheet" href="src/style.css">
     <style>
         @keyframes fade-in {
             from {
@@ -26,34 +27,55 @@
     <title>Homepage</title>
 </head>
 
-<body class="animate-fade-in dark:bg-slate-800">
+<body class="animate-fade-in dark:bg-slate-800 bg-slate-300">
     <header class="flex justify-center mt-20">
-        <div class="flex">
-            <span class="text-slate-500 text-sm mr-2">light</span>
-            <input type="checkbox" id="toggle" class="hidden">
-            <label for="toggle">
-                <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
-                    <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
-                </div>
-            </label>
-            <span class="text-slate-500 text-sm ml-2">dark</span>
+        <div class="wrapper">
+            <div style="--a: 0;" class="btn-sensor sensor-n"></div>
+            <div style="--a: 45;" class="btn-sensor sensor-ne"></div>
+            <div style="--a: 90;" class="btn-sensor sensor-e"></div>
+            <div style="--a: 135;" class="btn-sensor sensor-se"></div>
+            <div style="--a: 180;" class="btn-sensor sensor-s"></div>
+            <div style="--a: 225;" class="btn-sensor sensor-sw"></div>
+            <div style="--a: 270;" class="btn-sensor sensor-w"></div>
+            <div style="--a: 315;" class="btn-sensor sensor-nw"></div>
+            <button class="btn-button">
+                <div class="btn-lid"></div>
+                <div class="btn-pupil"></div>
+            </button>
+            <button class="btn-button">
+                <div class="btn-lid"></div>
+                <div class="btn-pupil"></div>
+            </button>
         </div>
     </header>
-    <article class="text-primary w-full my-4 ">
+    <article class="text-primary w-full">
+
         <div class="flex justify-center">
             <div class="xl:container mx-10 flex flex-col mt-10">
                 <!-- Logo Atas -->
+                <div class="flex justify-center mb-10 z-[911]">
+                    <span class="text-slate-500 text-sm mr-2">light</span>
+                    <input type="checkbox" id="toggle" class="hidden">
+                    <label for="toggle">
+                        <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                            <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+                        </div>
+                    </label>
+                    <span class="text-slate-500 text-sm ml-2">dark</span>
+                </div>
                 <div class="flex justify-center mb-4">
                     <img src="dist/img/logo.png" alt="" width="130px" class="rounded-full">
                 </div>
+
                 <h1 class="font-bold text-2xl font-rubik text-center dark:text-white">Alief Arifin Mahardiko</h1>
-                <h1 id="animated-text" class="text-md text-slate-600 dark:text-white font-rubik my-3 text-center min-h-[1.5rem]">
+                <h1 id="animated-text"
+                    class="text-md text-slate-600 dark:text-white font-rubik my-3 text-center min-h-[1.5rem]">
                     Fullstack Developer</h1>
                 <!-- main menu -->
-                <div class="flex flex-wrap items-center ">
+                <div class="flex flex-wrap items-center">
                     <div class="w-full ">
                         <a href="https://aliefarfn.my.id" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md dark:border-sky-700 border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 z-[900] shadow-xl dark:text-white rounded-md dark:border-sky-700 border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/web.png" alt="Portfolio"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
@@ -72,7 +94,7 @@
                                 class="absolute inset-0 w-full h-full bg-primary transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
                         </a>
                         <a href="https://trakteer.id/aliefarfn/tip" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md dark:border-sky-700 border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md dark:border-sky-700 border-primary font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-skate-900 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/coffee.png" alt="Trakteer"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
@@ -92,11 +114,12 @@
                         </a>
                     </div>
                     <div class="w-full">
-                        <h1 class="text-center  text-xl font-rubik font-semibold mb-3 mt-5 dark:text-white">Reach Out for Business
+                        <h1 class="text-center  text-xl font-rubik font-semibold mb-3 mt-5 dark:text-white">Reach Out
+                            for Business
                         </h1>
                         <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=aliefarifin99@gmail.com"
                             target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/gmail.png" alt="Email"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10 rounded-full">
@@ -116,7 +139,7 @@
                                 class="absolute inset-0 w-full h-full bg-gmail-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
                         </a>
                         <a href="https://wa.me/6285947354250" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-green-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-green-700 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-green-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-green-700 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/whatsapp.png" alt="Whatsapp"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
@@ -136,7 +159,7 @@
                                 class="absolute inset-0 w-full h-full bg-whatsapp-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
                         </a>
                         <a href="https://t.me/aliefarfn" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-cyan-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-cyan-700 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-cyan-700 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-cyan-700 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/telegram.png" alt="Telegram"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
@@ -157,9 +180,10 @@
                         </a>
                     </div>
                     <div class="w-full">
-                        <h1 class="text-center w-full text-xl font-rubik dark:text-white font-semibold mb-3 mt-5">Socials</h1>
+                        <h1 class="text-center w-full text-xl font-rubik dark:text-white font-semibold mb-3 mt-5">
+                            Socials</h1>
                         <a href="https://www.instagram.com/aliefarfn" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-rose-600 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-rose-700 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/instagram.png" alt="Instagram"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
@@ -179,7 +203,7 @@
                                 class="absolute inset-0 w-full h-full bg-instagram-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
                         </a>
                         <a href="https://www.linkedin.com/in/alief-arifin-mahardiko-335502235" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-blue-500 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-blue-500 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-blue-500 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-blue-500 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/linkedin.png" alt="LinkedIn"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
@@ -199,7 +223,7 @@
                                 class="absolute inset-0 w-full h-full bg-linkedin-gradient transition-all transform scale-x-0 group-hover:scale-x-100 origin-left duration-500"></span>
                         </a>
                         <a href="https://github.com/Ar1veeee" target="_blank"
-                            class="w-full border-2 shadow-xl dark:text-white rounded-md border-slate-900 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-slate-900 flex mr-3 items-center relative overflow-hidden group">
+                            class="w-full border-2 shadow-xl z-[900] dark:text-white rounded-md border-slate-900 font-rubik py-3 mb-2 pl-5 text-primary hover:text-white hover:border-slate-900 flex mr-3 items-center relative overflow-hidden group">
                             <div class="relative w-6 h-6 mr-3">
                                 <img src="dist/img/github.png" alt="GitHub"
                                     class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0 z-10">
@@ -222,14 +246,23 @@
                 </div>
             </div>
         </div>
+        <div class="notification">
+            <div class="notification-content">
+                <p>For better experience, please use desktop</p>
+                <img src="dist/img/chat.png" alt="Chat Icon" class="chat-icon">
+            </div>
+        </div>        
+
     </article>
-    <footer class="my-20">
+    <footer class="my-40 z-[911]">
         <div class="text-center font-rubik dark:text-white">
             <a href="https://instagram.com/aliefarfn" target="_blank" class="text-teal-500">Alief Arifin Mahardiko </a>
             &copy; 2024 <br>
-            Located in <a href="https://www.google.com/maps/place/Jawa+Tengah/@-6.9641012,108.8012408,8z/data=!3m1!4b1!4m6!3m5!1s0x2e65759b9cd518dd:0xc377d19d8fedbc46!8m2!3d-7.150975!4d110.1402594!16zL20vMDJiZDQx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-teal-500"> Jawa Tengah, Indonesia</a>
+            Located in <a
+                href="https://www.google.com/maps/place/Jawa+Tengah/@-6.9641012,108.8012408,8z/data=!3m1!4b1!4m6!3m5!1s0x2e65759b9cd518dd:0xc377d19d8fedbc46!8m2!3d-7.150975!4d110.1402594!16zL20vMDJiZDQx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="text-teal-500"> Jawa Tengah, Indonesia</a>
         </div>
-
+        
     </footer>
     <script src="dist/js/script.js"></script>
 </body>
