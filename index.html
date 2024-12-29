@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
-    <link rel="shortcut icon" href="dist/img/logo.png">
+    <link rel="shortcut icon" href="dist/img/logo.ico">
     <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <style>
         @keyframes fade-in {
             from {
@@ -246,15 +247,27 @@
                 </div>
             </div>
         </div>
-        <div class="notification">
+        <!-- <div class="notification">
             <div class="notification-content">
                 <p>For better experience, please use desktop</p>
                 <img src="dist/img/chat.png" alt="Chat Icon" class="chat-icon">
             </div>
-        </div>        
-
+        </div>  -->
+        <div class="terminal-loader mx-auto">
+            <div class="terminal-header">
+                <div class="terminal-title">Information</div>
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+            </div>
+            <div class="text flex flex-wrap">
+                <p>This feature works best on desktop.</p>
+            </div>
+        </div>
     </article>
-    <footer class="my-40 z-[911]">
+    <footer class="mb-[200px] mt-40 z-[911]">
         <div class="text-center font-rubik dark:text-white">
             <a href="https://instagram.com/aliefarfn" target="_blank" class="text-teal-500">Alief Arifin Mahardiko </a>
             &copy; 2024 <br>
@@ -262,7 +275,7 @@
                 href="https://www.google.com/maps/place/Jawa+Tengah/@-6.9641012,108.8012408,8z/data=!3m1!4b1!4m6!3m5!1s0x2e65759b9cd518dd:0xc377d19d8fedbc46!8m2!3d-7.150975!4d110.1402594!16zL20vMDJiZDQx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank" class="text-teal-500"> Jawa Tengah, Indonesia</a>
         </div>
-        
+
     </footer>
     <script src="dist/js/script.js"></script>
 </body>
