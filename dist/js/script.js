@@ -1,5 +1,5 @@
 const element = document.getElementById("animated-text");
-const roles = ["Fullstack Developer", "Cloud Engineer", "DevOps Engineer", "IoT Engineer"];
+const roles = ["Fullstack Developer", "Cloud Engineer", "IoT Engineer"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
